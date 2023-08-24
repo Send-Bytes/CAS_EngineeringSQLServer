@@ -1,0 +1,10 @@
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\bin\Debug\CAS_Engineering.dacpac
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\bin\Debug\CAS_Engineering.dll
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\bin\Debug\CAS_Engineering.pdb
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\CAS_Engineering.sqlproj.AssemblyReference.cache
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\Model.xml
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\refactor.xml
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\postdeploy.sql
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\predeploy.sql
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\CAS_Engineering.dll
+C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering\obj\Debug\CAS_Engineering.pdb
