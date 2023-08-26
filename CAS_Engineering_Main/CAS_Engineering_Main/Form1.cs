@@ -30,5 +30,23 @@ namespace CAS_Engineering_Main
 
             con.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Testing the new database
+
+            SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\CAS_Engineering.mdf;Integrated Security=True");
+            try
+            {
+                conn.Open();
+                MessageBox.Show("Connected");
+
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show("Error connecting to database" + error.ToString());
+            }
+            conn.Close();
+        }
     }
 }
