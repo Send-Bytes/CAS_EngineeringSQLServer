@@ -20,7 +20,7 @@ namespace CAS_Engineering_Main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Reynardt Anderson\\Documents\\GitHub\\CAS_EngineeringSQLServer\\CAS_Engineering_Main\\CAS_Engineering_Main\\dboCASEngineering.mdf\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dboCASEngineering.mdf;Integrated Security=True");
             try
             {
                 con.Open();
