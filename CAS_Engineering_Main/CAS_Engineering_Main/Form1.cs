@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,19 @@ namespace CAS_Engineering_Main
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Reynardt Anderson\\Documents\\GitHub\\CAS_EngineeringSQLServer\\CAS_Engineering_Main\\CAS_Engineering_Main\\dboCASEngineering.mdf\";Integrated Security=True");
+            try
+            {
+                con.Open();
+                MessageBox.Show("Connected!");
+            }
+            catch { MessageBox.Show("Error opening database"); }
+
+            con.Close();
         }
     }
 }
