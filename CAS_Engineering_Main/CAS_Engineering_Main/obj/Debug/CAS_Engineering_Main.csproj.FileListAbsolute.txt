@@ -25,3 +25,5 @@ C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineerin
 C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.CoreCompileInputs.cache
 C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.exe
 C:\Users\caity\OneDrive\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.pdb
+C:\Users\Reynardt Anderson\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\CAS_Engineering.mdf
+C:\Users\Reynardt Anderson\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\CAS_Engineering_log.ldf
