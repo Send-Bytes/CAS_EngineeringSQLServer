@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CAS_Engineering_Main.Dash
 {
-    public partial class frmDashA : Form
+    public partial class frmDashPM : Form
     {
-        public frmDashA()
+        public frmDashPM()
         {
             InitializeComponent();
         }

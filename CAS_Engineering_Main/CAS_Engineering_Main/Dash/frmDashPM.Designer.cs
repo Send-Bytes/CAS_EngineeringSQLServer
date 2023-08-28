@@ -1,6 +1,6 @@
 ﻿namespace CAS_Engineering_Main.Dash
 {
-    partial class frmDashA
+    partial class frmDashPM
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // frmDashA
+            // frmDashPM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmDashA";
-            this.Text = "frmDash";
+            this.Name = "frmDashPM";
+            this.Text = "Project Manager DashBoard";
             this.ResumeLayout(false);
 
         }
