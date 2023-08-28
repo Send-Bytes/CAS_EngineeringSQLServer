@@ -95,6 +95,7 @@
             this.lblNewUsr.Size = new System.Drawing.Size(101, 13);
             this.lblNewUsr.TabIndex = 5;
             this.lblNewUsr.Text = "Register a new user";
+            this.lblNewUsr.Click += new System.EventHandler(this.lblNewUsr_Click);
             // 
             // txtPassword
             // 

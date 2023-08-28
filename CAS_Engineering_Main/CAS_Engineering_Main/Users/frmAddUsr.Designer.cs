@@ -47,9 +47,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnAddUsr = new System.Windows.Forms.Button();
+            this.btnDone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -207,15 +208,16 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(159, 21);
             this.comboBox1.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label11
+            // lblPass
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(496, 173);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Password:";
+            this.lblPass.AutoSize = true;
+            this.lblPass.Location = new System.Drawing.Point(496, 173);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(56, 13);
+            this.lblPass.TabIndex = 19;
+            this.lblPass.Text = "Password:";
             // 
             // txtPass
             // 
@@ -232,15 +234,27 @@
             this.btnAddUsr.TabIndex = 21;
             this.btnAddUsr.Text = "Add New User";
             this.btnAddUsr.UseVisualStyleBackColor = true;
+            this.btnAddUsr.Click += new System.EventHandler(this.btnAddUsr_Click);
+            // 
+            // btnDone
+            // 
+            this.btnDone.Location = new System.Drawing.Point(667, 269);
+            this.btnDone.Name = "btnDone";
+            this.btnDone.Size = new System.Drawing.Size(75, 23);
+            this.btnDone.TabIndex = 22;
+            this.btnDone.Text = "Done";
+            this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
             // frmAddUsr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 450);
+            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnAddUsr);
             this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblPass);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -289,8 +303,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnAddUsr;
+        private System.Windows.Forms.Button btnDone;
     }
 }

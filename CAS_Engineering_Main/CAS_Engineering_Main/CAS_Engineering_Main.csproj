@@ -104,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Users\frmAddUsr.resx">
       <DependentUpon>frmAddUsr.cs</DependentUpon>
@@ -129,6 +130,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dboCASEngineering.mdf</DependentUpon>
     </Content>
+    <Content Include="Resources\Employees.png" />
+    <Content Include="Resources\equipment.png" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\menu.png" />
+    <Content Include="Resources\projects.png" />
+    <Content Include="Resources\reports.png" />
+    <None Include="Resources\client.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

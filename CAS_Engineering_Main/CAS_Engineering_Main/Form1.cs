@@ -1,4 +1,5 @@
 ﻿using CAS_Engineering_Main.Dash;
+using CAS_Engineering_Main.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -146,6 +147,13 @@ namespace CAS_Engineering_Main
                     MessageBox.Show("The following error has occured: " + ex.ToString(), "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void lblNewUsr_Click(object sender, EventArgs e)
+        {
+            frmAddUsr addUsr = new frmAddUsr();
+            this.Hide();
+            addUsr.Show();
         }
     }
 }
