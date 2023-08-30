@@ -104,9 +104,9 @@ namespace CAS_Engineering_Main
                             if(dataReader.GetValue(1).ToString() == "Administrator")
                             {
                                 //Dashboard for Administrators will be displayed
-                                frmDashA adminDash = new frmDashA();
+                                frmDashPM pmDash = new frmDashPM();
                                 this.Hide();
-                                adminDash.Show();
+                                pmDash.Show();
                             }
                             else if(dataReader.GetValue(1).ToString() == "Project Manager")
                             {
