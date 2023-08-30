@@ -177,5 +177,10 @@ namespace CAS_Engineering_Main.Users
             this.Hide();
             frmLogin.Show();
         }
+
+        private void mTxtDOB_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
