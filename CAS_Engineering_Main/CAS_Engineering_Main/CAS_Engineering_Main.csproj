@@ -61,17 +61,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dash\frmAddEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmAddEquip.Designer.cs">
+      <DependentUpon>frmAddEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmAllocateEmps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmAllocateEmps.Designer.cs">
+      <DependentUpon>frmAllocateEmps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmClientAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmClientAdd.Designer.cs">
+      <DependentUpon>frmClientAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dash\frmDashPM.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dash\frmDashPM.Designer.cs">
       <DependentUpon>frmDashPM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dash\frmDelEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmDelEquip.Designer.cs">
+      <DependentUpon>frmDelEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmDelProj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmDelProj.Designer.cs">
+      <DependentUpon>frmDelProj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmDelUsr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmDelUsr.Designer.cs">
+      <DependentUpon>frmDelUsr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmProjEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmProjEquip.Designer.cs">
+      <DependentUpon>frmProjEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmProjUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmProjUpdate.Designer.cs">
+      <DependentUpon>frmProjUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmUpEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmUpEquip.Designer.cs">
+      <DependentUpon>frmUpEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash\frmUpUsr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash\frmUpUsr.Designer.cs">
+      <DependentUpon>frmUpUsr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjects.Designer.cs">
+      <DependentUpon>frmProjects.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,11 +153,32 @@
     <Compile Include="Users\frmAddUsr.Designer.cs">
       <DependentUpon>frmAddUsr.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dash\frmAddEquip.resx">
+      <DependentUpon>frmAddEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmClientAdd.resx">
+      <DependentUpon>frmClientAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dash\frmDashPM.resx">
       <DependentUpon>frmDashPM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmDelProj.resx">
+      <DependentUpon>frmDelProj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmProjUpdate.resx">
+      <DependentUpon>frmProjUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmUpEquip.resx">
+      <DependentUpon>frmUpEquip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjects.resx">
+      <DependentUpon>frmProjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
