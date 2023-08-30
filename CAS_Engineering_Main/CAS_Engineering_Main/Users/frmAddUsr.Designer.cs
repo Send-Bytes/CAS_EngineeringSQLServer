@@ -43,14 +43,13 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtECN = new System.Windows.Forms.TextBox();
             this.txtECName = new System.Windows.Forms.TextBox();
-            this.mTxtDOB = new System.Windows.Forms.MaskedTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnAddUsr = new System.Windows.Forms.Button();
             this.btnDone = new System.Windows.Forms.Button();
+            this.mTxtDOB = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -174,24 +173,6 @@
             this.txtECName.Size = new System.Drawing.Size(100, 20);
             this.txtECName.TabIndex = 14;
             // 
-            // mTxtDOB
-            // 
-            this.mTxtDOB.Location = new System.Drawing.Point(196, 173);
-            this.mTxtDOB.Mask = "0000/00/00";
-            this.mTxtDOB.Name = "mTxtDOB";
-            this.mTxtDOB.Size = new System.Drawing.Size(100, 20);
-            this.mTxtDOB.TabIndex = 15;
-            this.mTxtDOB.ValidatingType = typeof(System.DateTime);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(315, 179);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 13);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "YYYY/MM/DD\r\n";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -246,19 +227,27 @@
             this.btnDone.UseVisualStyleBackColor = true;
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
+            // mTxtDOB
+            // 
+            this.mTxtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.mTxtDOB.Location = new System.Drawing.Point(196, 173);
+            this.mTxtDOB.Name = "mTxtDOB";
+            this.mTxtDOB.Size = new System.Drawing.Size(100, 20);
+            this.mTxtDOB.TabIndex = 23;
+            this.mTxtDOB.ValueChanged += new System.EventHandler(this.mTxtDOB_ValueChanged);
+            // 
             // frmAddUsr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 450);
+            this.Controls.Add(this.mTxtDOB);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnAddUsr);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.mTxtDOB);
             this.Controls.Add(this.txtECName);
             this.Controls.Add(this.txtECN);
             this.Controls.Add(this.txtEmail);
@@ -299,13 +288,12 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtECN;
         private System.Windows.Forms.TextBox txtECName;
-        private System.Windows.Forms.MaskedTextBox mTxtDOB;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnAddUsr;
         private System.Windows.Forms.Button btnDone;
+        private System.Windows.Forms.DateTimePicker mTxtDOB;
     }
 }
