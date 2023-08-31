@@ -104,6 +104,8 @@
             this.monthCalendar1.Location = new System.Drawing.Point(51, 169);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
             // lblDisplayStartDate
             // 
@@ -158,6 +160,7 @@
             this.cmbClient.Name = "cmbClient";
             this.cmbClient.Size = new System.Drawing.Size(121, 21);
             this.cmbClient.TabIndex = 13;
+            this.cmbClient.SelectedIndexChanged += new System.EventHandler(this.cmbClient_SelectedIndexChanged);
             // 
             // btnAddProject
             // 
@@ -167,6 +170,7 @@
             this.btnAddProject.TabIndex = 14;
             this.btnAddProject.Text = "Add Project";
             this.btnAddProject.UseVisualStyleBackColor = true;
+            this.btnAddProject.Click += new System.EventHandler(this.btnAddProject_Click);
             // 
             // frmProjects
             // 
@@ -190,6 +194,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmProjects";
             this.Text = "Add Project";
+            this.Load += new System.EventHandler(this.frmProjects_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
