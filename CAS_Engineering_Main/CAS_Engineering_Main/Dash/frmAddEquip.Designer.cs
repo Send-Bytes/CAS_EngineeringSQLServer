@@ -112,6 +112,7 @@
             this.btnAddEquip.TabIndex = 8;
             this.btnAddEquip.Text = "Add Equipment";
             this.btnAddEquip.UseVisualStyleBackColor = true;
+            this.btnAddEquip.Click += new System.EventHandler(this.btnAddEquip_Click);
             // 
             // frmAddEquip
             // 
