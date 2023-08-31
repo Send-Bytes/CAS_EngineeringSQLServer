@@ -182,14 +182,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Users\frmAddUsr.resx">
       <DependentUpon>frmAddUsr.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,7 +208,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dboCASEngineering.mdf</DependentUpon>
     </Content>
-    <Content Include="Resources\Employees.png" />
     <Content Include="Resources\equipment.png" />
     <Content Include="Resources\home.png" />
     <Content Include="Resources\menu.png" />
