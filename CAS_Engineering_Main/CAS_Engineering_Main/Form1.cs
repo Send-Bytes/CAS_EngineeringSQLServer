@@ -46,26 +46,8 @@ namespace CAS_Engineering_Main
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Testing a database that doesn't exist
-
-            SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\CAS_Engineering.mdf;Integrated Security=True");
-            try
-            {
-                conn.Open();
-                MessageBox.Show("Connected");
-
-                string query = "INSERT INTO YourTable (User_ID) VALUES (@id)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", 1);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Data inserted");
-
-            }
-            catch (SqlException error)
-            {
-                MessageBox.Show("Error connecting to database" + error.ToString());
-            }
-            conn.Close();
+            frmDashPM frmDashPM = new frmDashPM();
+            frmDashPM.ShowDialog();
         }
 
         private void Form1_Load(object sender, EventArgs e)
