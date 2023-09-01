@@ -40,11 +40,6 @@ namespace CAS_Engineering_Main.Dash
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void pnlProject_Click(object sender, EventArgs e)
         {
             if (pnlProjectV.Visible == false)
@@ -91,6 +86,56 @@ namespace CAS_Engineering_Main.Dash
             {
                 pnlPayV.Visible = false;
             }
+        }
+
+        private void pnlAdmin_MouseHover(object sender, EventArgs e)
+        {
+            pnlAdmin.BackColor = Color.Green;
+        }
+
+        private void pnlProject_MouseHover(object sender, EventArgs e)
+        {
+            pnlProject.BackColor = Color.Green;
+        }
+
+        private void pnlEquip_MouseHover(object sender, EventArgs e)
+        {
+            pnlEquip.BackColor = Color.Green;
+        }
+
+        private void pnlPay_MouseHover(object sender, EventArgs e)
+        {
+            pnlPay.BackColor = Color.Green;
+        }
+
+        private void pnlReports_MouseHover(object sender, EventArgs e)
+        {
+            pnlReports.BackColor = Color.Green;
+        }
+
+        private void pnlAdmin_MouseLeave(object sender, EventArgs e)
+        {
+            pnlAdmin.BackColor = Color.LightBlue;
+        }
+
+        private void pnlProject_MouseLeave(object sender, EventArgs e)
+        {
+            pnlProject.BackColor = Color.LightBlue;
+        }
+
+        private void pnlEquip_MouseLeave(object sender, EventArgs e)
+        {
+            pnlEquip.BackColor = Color.LightBlue;
+        }
+
+        private void pnlPay_MouseLeave(object sender, EventArgs e)
+        {
+            pnlPay.BackColor = Color.LightBlue;
+        }
+
+        private void pnlReports_MouseLeave(object sender, EventArgs e)
+        {
+            pnlReports.BackColor = Color.LightBlue;
         }
     }
 }
