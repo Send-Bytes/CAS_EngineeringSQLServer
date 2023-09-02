@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Dash\frmUpEquip.resx">
       <DependentUpon>frmUpEquip.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmUpUsr.resx">
+      <DependentUpon>frmUpUsr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +214,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dboCASEngineering.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\1 Flipped.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\6.png" />
     <Content Include="Resources\equipment.png" />
     <Content Include="Resources\home.png" />
     <Content Include="Resources\menu.png" />
