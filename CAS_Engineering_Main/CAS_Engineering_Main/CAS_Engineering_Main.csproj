@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -227,8 +229,7 @@
     <None Include="Resources\3.png" />
     <None Include="Resources\6.png" />
     <None Include="Resources\7.png" />
-    <Content Include="Resources\dashBar.png" />
-    <None Include="Resources\dashBar1.png" />
+    <None Include="Resources\12.jpg" />
     <Content Include="Resources\equipment.png" />
     <Content Include="Resources\home.png" />
     <Content Include="Resources\menu.png" />
