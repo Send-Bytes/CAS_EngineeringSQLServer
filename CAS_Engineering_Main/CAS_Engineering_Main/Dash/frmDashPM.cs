@@ -137,5 +137,31 @@ namespace CAS_Engineering_Main.Dash
         {
             pnlReports.BackColor = Color.LightBlue;
         }
+
+        private void frmDashPM_Load(object sender, EventArgs e)
+        {
+            if(lblHolder.Text == "P")
+            {
+                pnlAdmin.Visible = false;
+                btnAddE.Visible = false;
+                btnAddEmpP.Visible = false;
+                btnAddP.Visible = false;
+                btnAddUsr.Visible = false;
+                btnAllocateE.Visible = false;
+                btnDeleteE.Visible = false; 
+                btnDeleteP.Visible = false;
+                btnRemoveUsr.Visible = false;
+                btnUpdateUsr.Visible = false;
+                pnlPay.Visible = false;
+                pnlReports.Visible = false;
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
     }
 }

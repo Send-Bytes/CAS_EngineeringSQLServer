@@ -89,6 +89,8 @@ namespace CAS_Engineering_Main
                                 frmDashPM pmDash = new frmDashPM();
                                 this.Hide();
                                 pmDash.Show();
+
+                                pmDash.lblHolder.Text = "A";
                             }
                             else if(dataReader.GetValue(1).ToString() == "Project Manager")
                             {
@@ -96,6 +98,8 @@ namespace CAS_Engineering_Main
                                 frmDashPM pmDash = new frmDashPM();
                                 this.Hide();
                                 pmDash.Show();
+
+                                pmDash.lblHolder.Text = "P";
                             }
                             else
                             {
@@ -136,6 +140,11 @@ namespace CAS_Engineering_Main
             frmAddUsr addUsr = new frmAddUsr();
             this.Hide();
             addUsr.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

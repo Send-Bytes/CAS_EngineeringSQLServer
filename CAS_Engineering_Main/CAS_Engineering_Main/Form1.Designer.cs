@@ -51,7 +51,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogin.Location = new System.Drawing.Point(900, 423);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(119, 45);
             this.btnLogin.TabIndex = 0;
@@ -64,12 +64,13 @@
             this.btnExit.BackColor = System.Drawing.Color.Goldenrod;
             this.btnExit.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(750, 423);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(119, 45);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
@@ -84,7 +85,7 @@
             // txtUName
             // 
             this.txtUName.Location = new System.Drawing.Point(887, 184);
-            this.txtUName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUName.Name = "txtUName";
             this.txtUName.Size = new System.Drawing.Size(132, 22);
             this.txtUName.TabIndex = 3;
@@ -114,7 +115,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(887, 255);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(132, 22);
             this.txtPassword.TabIndex = 6;
@@ -122,7 +123,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(507, 308);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 52);
             this.button1.TabIndex = 7;
@@ -133,7 +134,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(510, 399);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 52);
             this.button2.TabIndex = 8;
@@ -170,7 +171,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
