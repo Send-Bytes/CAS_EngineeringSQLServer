@@ -54,51 +54,54 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(141, 251);
+            this.label1.Location = new System.Drawing.Point(152, 234);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
+            this.label1.Size = new System.Drawing.Size(60, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Project";
+            this.label1.Text = "Project :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(141, 290);
+            this.label2.Location = new System.Drawing.Point(103, 276);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 34);
+            this.label2.Size = new System.Drawing.Size(109, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Date\r\nReceived\r\n";
+            this.label2.Text = "Date Received :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(122, 347);
+            this.label3.Location = new System.Drawing.Point(90, 319);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 17);
+            this.label3.Size = new System.Drawing.Size(122, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Amount received";
+            this.label3.Text = "Amount received :";
             // 
             // txtProjID
             // 
-            this.txtProjID.Location = new System.Drawing.Point(242, 246);
+            this.txtProjID.Location = new System.Drawing.Point(242, 231);
             this.txtProjID.Name = "txtProjID";
             this.txtProjID.Size = new System.Drawing.Size(100, 20);
             this.txtProjID.TabIndex = 4;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(242, 298);
+            this.dateTimePicker1.Location = new System.Drawing.Point(242, 272);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(242, 344);
+            this.txtAmount.Location = new System.Drawing.Point(242, 319);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(100, 20);
             this.txtAmount.TabIndex = 6;
@@ -106,8 +109,8 @@
             // btnAddPay
             // 
             this.btnAddPay.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnAddPay.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPay.Location = new System.Drawing.Point(166, 384);
+            this.btnAddPay.Font = new System.Drawing.Font("Goudy Old Style", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPay.Location = new System.Drawing.Point(165, 362);
             this.btnAddPay.Name = "btnAddPay";
             this.btnAddPay.Size = new System.Drawing.Size(125, 44);
             this.btnAddPay.TabIndex = 7;

@@ -187,6 +187,7 @@ namespace CAS_Engineering_Main.Dash
             }
             catch(SqlException ex) { MessageBox.Show("The following error occured: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
+
     }
 }
 
