@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CAS_Engineering_Main.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -162,6 +163,83 @@ namespace CAS_Engineering_Main.Dash
             this.Close();
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void btnAddUsr_Click(object sender, EventArgs e)
+        {
+            frmAddUsr frmAddUsr = new frmAddUsr();
+            frmAddUsr.ShowDialog();
+        }
+
+        private void btnRemoveUsr_Click(object sender, EventArgs e)
+        {
+            frmDelUsr frmDelUsr = new frmDelUsr();
+            frmDelUsr.ShowDialog();
+        }
+
+        private void btnUpdateUsr_Click(object sender, EventArgs e)
+        {
+            frmUpUsr frmUpUsr = new frmUpUsr();
+            frmUpUsr.ShowDialog();
+        }
+
+        private void btnAddP_Click(object sender, EventArgs e)
+        {
+            frmProjects frmProjects = new frmProjects();
+            frmProjects.ShowDialog();
+        }
+
+        private void btnUpdateP_Click(object sender, EventArgs e)
+        {
+            frmProjUpdate frmProj = new frmProjUpdate();
+            frmProj.ShowDialog();
+        }
+
+        private void btnDeleteP_Click(object sender, EventArgs e)
+        {
+            frmDelProj frmDelProj = new frmDelProj();
+            frmDelProj.ShowDialog();
+        }
+
+        private void btnAddEmpP_Click(object sender, EventArgs e)
+        {
+            frmAllocateEmps frmAllocateEmps = new frmAllocateEmps();
+            frmAllocateEmps.ShowDialog();
+        }
+
+        private void btnAddE_Click(object sender, EventArgs e)
+        {
+            frmAddEquip frmAddEquip = new frmAddEquip();
+            frmAddEquip.ShowDialog();
+        }
+
+        private void btnUpdateE_Click(object sender, EventArgs e)
+        {
+            frmUpEquip frmUpEquip = new frmUpEquip();
+            frmUpEquip.ShowDialog();
+        }
+
+        private void btnAllocateE_Click(object sender, EventArgs e)
+        {
+            frmProjEquip frmProjEquip = new frmProjEquip();
+            frmProjEquip.ShowDialog();
+        }
+
+        private void btnDeleteE_Click(object sender, EventArgs e)
+        {
+            frmDelEquip frmDelEquip = new frmDelEquip();
+            frmDelEquip.ShowDialog();
+        }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            frmPayment frmPayment = new frmPayment();
+            frmPayment.ShowDialog();
+        }
+
+        private void pnlReports_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
