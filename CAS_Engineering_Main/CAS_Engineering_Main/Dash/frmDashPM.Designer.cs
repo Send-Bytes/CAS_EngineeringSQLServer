@@ -112,7 +112,7 @@
             this.flowLayoutPanel1.Controls.Add(this.pnlPayV);
             this.flowLayoutPanel1.Controls.Add(this.pnlReports);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(417, 203);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1224, 647);
             this.flowLayoutPanel1.TabIndex = 17;
@@ -122,7 +122,7 @@
             this.pnlAdmin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlAdmin.Controls.Add(this.label2);
             this.pnlAdmin.Location = new System.Drawing.Point(4, 4);
-            this.pnlAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAdmin.Name = "pnlAdmin";
             this.pnlAdmin.Size = new System.Drawing.Size(1173, 123);
             this.pnlAdmin.TabIndex = 18;
@@ -137,7 +137,7 @@
             this.pnlAdminV.Controls.Add(this.btnRemoveUsr);
             this.pnlAdminV.Controls.Add(this.btnAddUsr);
             this.pnlAdminV.Location = new System.Drawing.Point(4, 135);
-            this.pnlAdminV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAdminV.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAdminV.Name = "pnlAdminV";
             this.pnlAdminV.Size = new System.Drawing.Size(1173, 123);
             this.pnlAdminV.TabIndex = 19;
@@ -148,43 +148,46 @@
             this.btnUpdateUsr.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnUpdateUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateUsr.Location = new System.Drawing.Point(825, 33);
-            this.btnUpdateUsr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateUsr.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateUsr.Name = "btnUpdateUsr";
             this.btnUpdateUsr.Size = new System.Drawing.Size(196, 59);
             this.btnUpdateUsr.TabIndex = 21;
             this.btnUpdateUsr.Text = "Update User";
             this.btnUpdateUsr.UseVisualStyleBackColor = true;
+            this.btnUpdateUsr.Click += new System.EventHandler(this.btnUpdateUsr_Click);
             // 
             // btnRemoveUsr
             // 
             this.btnRemoveUsr.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRemoveUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveUsr.Location = new System.Drawing.Point(499, 33);
-            this.btnRemoveUsr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemoveUsr.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveUsr.Name = "btnRemoveUsr";
             this.btnRemoveUsr.Size = new System.Drawing.Size(196, 59);
             this.btnRemoveUsr.TabIndex = 20;
             this.btnRemoveUsr.Text = "Remove User";
             this.btnRemoveUsr.UseVisualStyleBackColor = true;
+            this.btnRemoveUsr.Click += new System.EventHandler(this.btnRemoveUsr_Click);
             // 
             // btnAddUsr
             // 
             this.btnAddUsr.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddUsr.Location = new System.Drawing.Point(183, 33);
-            this.btnAddUsr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddUsr.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddUsr.Name = "btnAddUsr";
             this.btnAddUsr.Size = new System.Drawing.Size(196, 59);
             this.btnAddUsr.TabIndex = 19;
             this.btnAddUsr.Text = "Add User";
             this.btnAddUsr.UseVisualStyleBackColor = true;
+            this.btnAddUsr.Click += new System.EventHandler(this.btnAddUsr_Click);
             // 
             // pnlProject
             // 
             this.pnlProject.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlProject.Controls.Add(this.label1);
             this.pnlProject.Location = new System.Drawing.Point(4, 266);
-            this.pnlProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlProject.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProject.Name = "pnlProject";
             this.pnlProject.Size = new System.Drawing.Size(1173, 123);
             this.pnlProject.TabIndex = 20;
@@ -200,7 +203,7 @@
             this.pnlProjectV.Controls.Add(this.btnUpdateP);
             this.pnlProjectV.Controls.Add(this.btnAddP);
             this.pnlProjectV.Location = new System.Drawing.Point(4, 397);
-            this.pnlProjectV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlProjectV.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProjectV.Name = "pnlProjectV";
             this.pnlProjectV.Size = new System.Drawing.Size(1173, 123);
             this.pnlProjectV.TabIndex = 21;
@@ -211,55 +214,59 @@
             this.btnAddEmpP.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddEmpP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddEmpP.Location = new System.Drawing.Point(871, 37);
-            this.btnAddEmpP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddEmpP.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddEmpP.Name = "btnAddEmpP";
             this.btnAddEmpP.Size = new System.Drawing.Size(196, 59);
             this.btnAddEmpP.TabIndex = 23;
             this.btnAddEmpP.Text = "Add Employee to Project";
             this.btnAddEmpP.UseVisualStyleBackColor = true;
+            this.btnAddEmpP.Click += new System.EventHandler(this.btnAddEmpP_Click);
             // 
             // btnDeleteP
             // 
             this.btnDeleteP.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDeleteP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteP.Location = new System.Drawing.Point(619, 37);
-            this.btnDeleteP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteP.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteP.Name = "btnDeleteP";
             this.btnDeleteP.Size = new System.Drawing.Size(196, 59);
             this.btnDeleteP.TabIndex = 22;
             this.btnDeleteP.Text = "Delete Project";
             this.btnDeleteP.UseVisualStyleBackColor = true;
+            this.btnDeleteP.Click += new System.EventHandler(this.btnDeleteP_Click);
             // 
             // btnUpdateP
             // 
             this.btnUpdateP.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnUpdateP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateP.Location = new System.Drawing.Point(360, 37);
-            this.btnUpdateP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateP.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateP.Name = "btnUpdateP";
             this.btnUpdateP.Size = new System.Drawing.Size(196, 59);
             this.btnUpdateP.TabIndex = 21;
             this.btnUpdateP.Text = "Update Project";
             this.btnUpdateP.UseVisualStyleBackColor = true;
+            this.btnUpdateP.Click += new System.EventHandler(this.btnUpdateP_Click);
             // 
             // btnAddP
             // 
             this.btnAddP.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddP.Location = new System.Drawing.Point(117, 37);
-            this.btnAddP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddP.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddP.Name = "btnAddP";
             this.btnAddP.Size = new System.Drawing.Size(196, 59);
             this.btnAddP.TabIndex = 20;
             this.btnAddP.Text = "Add Project";
             this.btnAddP.UseVisualStyleBackColor = true;
+            this.btnAddP.Click += new System.EventHandler(this.btnAddP_Click);
             // 
             // pnlEquip
             // 
             this.pnlEquip.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlEquip.Controls.Add(this.label18);
             this.pnlEquip.Location = new System.Drawing.Point(4, 528);
-            this.pnlEquip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEquip.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEquip.Name = "pnlEquip";
             this.pnlEquip.Size = new System.Drawing.Size(1173, 123);
             this.pnlEquip.TabIndex = 22;
@@ -285,7 +292,7 @@
             this.pnlEquipV.Controls.Add(this.btnUpdateE);
             this.pnlEquipV.Controls.Add(this.btnAddE);
             this.pnlEquipV.Location = new System.Drawing.Point(4, 659);
-            this.pnlEquipV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEquipV.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEquipV.Name = "pnlEquipV";
             this.pnlEquipV.Size = new System.Drawing.Size(1173, 123);
             this.pnlEquipV.TabIndex = 23;
@@ -296,55 +303,59 @@
             this.btnDeleteE.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDeleteE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteE.Location = new System.Drawing.Point(871, 42);
-            this.btnDeleteE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteE.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteE.Name = "btnDeleteE";
             this.btnDeleteE.Size = new System.Drawing.Size(196, 59);
             this.btnDeleteE.TabIndex = 23;
             this.btnDeleteE.Text = "Delete Equipment";
             this.btnDeleteE.UseVisualStyleBackColor = true;
+            this.btnDeleteE.Click += new System.EventHandler(this.btnDeleteE_Click);
             // 
             // btnAllocateE
             // 
             this.btnAllocateE.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAllocateE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAllocateE.Location = new System.Drawing.Point(619, 42);
-            this.btnAllocateE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAllocateE.Margin = new System.Windows.Forms.Padding(4);
             this.btnAllocateE.Name = "btnAllocateE";
             this.btnAllocateE.Size = new System.Drawing.Size(196, 59);
             this.btnAllocateE.TabIndex = 22;
             this.btnAllocateE.Text = "Allocate Equipment";
             this.btnAllocateE.UseVisualStyleBackColor = true;
+            this.btnAllocateE.Click += new System.EventHandler(this.btnAllocateE_Click);
             // 
             // btnUpdateE
             // 
             this.btnUpdateE.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnUpdateE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateE.Location = new System.Drawing.Point(360, 42);
-            this.btnUpdateE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateE.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateE.Name = "btnUpdateE";
             this.btnUpdateE.Size = new System.Drawing.Size(196, 59);
             this.btnUpdateE.TabIndex = 21;
             this.btnUpdateE.Text = "Update Equipment";
             this.btnUpdateE.UseVisualStyleBackColor = true;
+            this.btnUpdateE.Click += new System.EventHandler(this.btnUpdateE_Click);
             // 
             // btnAddE
             // 
             this.btnAddE.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddE.Location = new System.Drawing.Point(117, 42);
-            this.btnAddE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddE.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddE.Name = "btnAddE";
             this.btnAddE.Size = new System.Drawing.Size(196, 59);
             this.btnAddE.TabIndex = 20;
             this.btnAddE.Text = "Add Equipment";
             this.btnAddE.UseVisualStyleBackColor = true;
+            this.btnAddE.Click += new System.EventHandler(this.btnAddE_Click);
             // 
             // pnlPay
             // 
             this.pnlPay.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlPay.Controls.Add(this.label19);
             this.pnlPay.Location = new System.Drawing.Point(4, 790);
-            this.pnlPay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPay.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPay.Name = "pnlPay";
             this.pnlPay.Size = new System.Drawing.Size(1173, 123);
             this.pnlPay.TabIndex = 24;
@@ -367,7 +378,7 @@
             this.pnlPayV.BackColor = System.Drawing.SystemColors.Info;
             this.pnlPayV.Controls.Add(this.btnPayment);
             this.pnlPayV.Location = new System.Drawing.Point(4, 921);
-            this.pnlPayV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPayV.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPayV.Name = "pnlPayV";
             this.pnlPayV.Size = new System.Drawing.Size(1173, 123);
             this.pnlPayV.TabIndex = 25;
@@ -379,22 +390,24 @@
             this.btnPayment.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayment.Location = new System.Drawing.Point(521, 36);
-            this.btnPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPayment.Margin = new System.Windows.Forms.Padding(4);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(196, 59);
             this.btnPayment.TabIndex = 20;
             this.btnPayment.Text = "Payment";
             this.btnPayment.UseVisualStyleBackColor = true;
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // pnlReports
             // 
             this.pnlReports.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlReports.Controls.Add(this.label13);
             this.pnlReports.Location = new System.Drawing.Point(4, 1052);
-            this.pnlReports.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlReports.Margin = new System.Windows.Forms.Padding(4);
             this.pnlReports.Name = "pnlReports";
             this.pnlReports.Size = new System.Drawing.Size(1173, 123);
             this.pnlReports.TabIndex = 26;
+            this.pnlReports.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlReports_Paint);
             this.pnlReports.MouseLeave += new System.EventHandler(this.pnlReports_MouseLeave);
             this.pnlReports.MouseHover += new System.EventHandler(this.pnlReports_MouseHover);
             // 
@@ -427,7 +440,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblHolder);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDashPM";
             this.Text = "Project Manager DashBoard";
             this.Load += new System.EventHandler(this.frmDashPM_Load);
