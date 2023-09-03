@@ -163,6 +163,9 @@
     <EmbeddedResource Include="Dash\frmAddEquip.resx">
       <DependentUpon>frmAddEquip.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmAllocateEmps.resx">
+      <DependentUpon>frmAllocateEmps.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dash\frmClientAdd.resx">
       <DependentUpon>frmClientAdd.cs</DependentUpon>
     </EmbeddedResource>

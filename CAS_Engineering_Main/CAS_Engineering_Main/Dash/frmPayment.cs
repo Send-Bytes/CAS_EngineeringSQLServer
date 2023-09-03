@@ -31,26 +31,6 @@ namespace CAS_Engineering_Main.Dash
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmPayment_Load(object sender, EventArgs e)
-        {
-            // Sit dit binne datagrid 
-            string query = "SELECT DISTINCT P_Description FROM Projects";
-            SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            dataGridView.DataSource = dataTable;
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -153,6 +133,14 @@ namespace CAS_Engineering_Main.Dash
             }
         }
 
-     
+        private void frmPayment_Load_1(object sender, EventArgs e)
+        {
+            // Sit dit binne datagrid 
+            string query = "SELECT DISTINCT P_Description FROM Projects";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dataGridView.DataSource = dataTable;
+        }
     }
 }

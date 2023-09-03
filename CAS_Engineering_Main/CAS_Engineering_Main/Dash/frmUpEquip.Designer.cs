@@ -49,6 +49,7 @@
             this.btnUpEquip.TabIndex = 0;
             this.btnUpEquip.Text = "Update Equipment";
             this.btnUpEquip.UseVisualStyleBackColor = false;
+            this.btnUpEquip.Click += new System.EventHandler(this.btnUpEquip_Click);
             // 
             // dataGridView1
             // 

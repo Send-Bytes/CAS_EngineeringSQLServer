@@ -72,7 +72,6 @@
             this.label2.Size = new System.Drawing.Size(109, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Date Received :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -145,6 +144,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmPayment";
             this.Text = "frmPayment";
+            this.Load += new System.EventHandler(this.frmPayment_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

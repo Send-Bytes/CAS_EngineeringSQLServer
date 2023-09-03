@@ -61,27 +61,29 @@ namespace CAS_Engineering_Main.Dash
             }
         }
 
-        private void btnDelUser_Click(object sender, EventArgs e)
+
+        private void btnDelUser_Click_1(object sender, EventArgs e)
         {
+
             //Deleting user from database
-            if(int.TryParse(txtID.Text,out int id))
+            if (int.TryParse(txtID.Text, out int id))
             {
                 DialogResult result = MessageBox.Show("Are you sure you want to delete this item?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 string sql_delUsr = $"DELETE FROM Users WHERE User_ID = {id}";
                 string cString = frm1.conString;
-                
+
                 con = new SqlConnection(cString);
                 // Check the user's response
                 if (result == DialogResult.Yes)
                 {
-                    if(con.State == ConnectionState.Closed) { con.Open(); }
+                    if (con.State == ConnectionState.Closed) { con.Open(); }
                     adapter = new SqlDataAdapter();
                     cmd = new SqlCommand(sql_delUsr, con);
                     adapter.DeleteCommand = cmd;
                     adapter.DeleteCommand.ExecuteNonQuery();
 
                     con.Close();
-                   
+
 
                     MessageBox.Show("Item deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -92,7 +94,7 @@ namespace CAS_Engineering_Main.Dash
                 }
 
             }
-            else{ }
+            else { }
         }
     }
 }
