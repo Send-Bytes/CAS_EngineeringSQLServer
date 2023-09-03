@@ -16,5 +16,10 @@ namespace CAS_Engineering_Main.Dash
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
