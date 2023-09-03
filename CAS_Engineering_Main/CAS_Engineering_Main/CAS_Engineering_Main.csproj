@@ -181,6 +181,9 @@
     <EmbeddedResource Include="Dash\frmPayment.resx">
       <DependentUpon>frmPayment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dash\frmProjEquip.resx">
+      <DependentUpon>frmProjEquip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dash\frmProjUpdate.resx">
       <DependentUpon>frmProjUpdate.cs</DependentUpon>
     </EmbeddedResource>
