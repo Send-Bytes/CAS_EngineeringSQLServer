@@ -101,6 +101,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmUpEquip";
             this.Text = "frmUpEquip";
+            this.Load += new System.EventHandler(this.frmUpEquip_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

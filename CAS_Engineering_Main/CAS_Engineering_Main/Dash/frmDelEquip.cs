@@ -13,7 +13,7 @@ namespace CAS_Engineering_Main.Dash
 {
     public partial class frmDelEquip : Form
     {
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\dboCASEngineering.mdf;Integrated Security=True";//cone tion string
+        public string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\dboCASEngineering.mdf;Integrated Security=True";//cone tion string
         public frmDelEquip()
         {
             InitializeComponent();
