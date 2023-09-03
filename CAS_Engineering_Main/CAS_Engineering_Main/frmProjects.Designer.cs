@@ -43,6 +43,8 @@
             this.cmbClient = new System.Windows.Forms.ComboBox();
             this.btnAddProject = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblDisplayStartDate = new System.Windows.Forms.Label();
+            this.lblDisplayEndDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(185, 223);
+            this.label3.Location = new System.Drawing.Point(143, 223);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 17);
             this.label3.TabIndex = 2;
@@ -115,7 +117,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.BackColor = System.Drawing.SystemColors.Menu;
-            this.monthCalendar1.Location = new System.Drawing.Point(175, 249);
+            this.monthCalendar1.Location = new System.Drawing.Point(132, 256);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -162,7 +164,7 @@
             // 
             this.btnAddProject.BackColor = System.Drawing.Color.Goldenrod;
             this.btnAddProject.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProject.Location = new System.Drawing.Point(527, 323);
+            this.btnAddProject.Location = new System.Drawing.Point(548, 321);
             this.btnAddProject.Name = "btnAddProject";
             this.btnAddProject.Size = new System.Drawing.Size(125, 60);
             this.btnAddProject.TabIndex = 14;
@@ -174,18 +176,41 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-49, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(893, 495);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // lblDisplayStartDate
+            // 
+            this.lblDisplayStartDate.AutoSize = true;
+            this.lblDisplayStartDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDisplayStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplayStartDate.Location = new System.Drawing.Point(371, 321);
+            this.lblDisplayStartDate.Name = "lblDisplayStartDate";
+            this.lblDisplayStartDate.Size = new System.Drawing.Size(8, 17);
+            this.lblDisplayStartDate.TabIndex = 16;
+            this.lblDisplayStartDate.Text = "\r\n";
+            // 
+            // lblDisplayEndDate
+            // 
+            this.lblDisplayEndDate.AutoSize = true;
+            this.lblDisplayEndDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDisplayEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplayEndDate.Location = new System.Drawing.Point(371, 364);
+            this.lblDisplayEndDate.Name = "lblDisplayEndDate";
+            this.lblDisplayEndDate.Size = new System.Drawing.Size(0, 17);
+            this.lblDisplayEndDate.TabIndex = 17;
+            // 
             // frmProjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblDisplayEndDate);
+            this.Controls.Add(this.lblDisplayStartDate);
             this.Controls.Add(this.btnAddProject);
             this.Controls.Add(this.cmbClient);
             this.Controls.Add(this.txtPStatus);
@@ -225,5 +250,7 @@
         private System.Windows.Forms.ComboBox cmbClient;
         private System.Windows.Forms.Button btnAddProject;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblDisplayStartDate;
+        private System.Windows.Forms.Label lblDisplayEndDate;
     }
 }
