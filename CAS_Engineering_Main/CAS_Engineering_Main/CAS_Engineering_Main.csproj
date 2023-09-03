@@ -220,6 +220,7 @@
     <None Include="Resources\1 Flipped.png" />
     <None Include="Resources\3.png" />
     <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
     <Content Include="Resources\equipment.png" />
     <Content Include="Resources\home.png" />
     <Content Include="Resources\menu.png" />
