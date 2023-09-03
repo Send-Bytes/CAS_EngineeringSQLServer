@@ -33,15 +33,7 @@ namespace CAS_Engineering_Main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dboCASEngineering.mdf;Integrated Security=True");
-            try
-            {
-                con.Open();
-                MessageBox.Show("Connected!");
-            }
-            catch { MessageBox.Show("Error opening database"); }
-
-            con.Close();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -137,9 +129,7 @@ namespace CAS_Engineering_Main
 
         private void lblNewUsr_Click(object sender, EventArgs e)
         {
-            frmAddUsr addUsr = new frmAddUsr();
-            this.Hide();
-            addUsr.Show();
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
