@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,16 @@ namespace CAS_Engineering_Main.Dash
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
+            Color startColor = Color.FromArgb(0, 122, 204);
+            Color endColor = Color.FromArgb(23, 162, 184);
+            LinearGradientMode gradientMode = LinearGradientMode.Vertical;
 
+            Rectangle rect = new Rectangle(0, 0, pnlPayV.Width, pnlPayV.Height);
+
+            using (LinearGradientBrush brush = new LinearGradientBrush(rect, startColor, endColor, gradientMode))
+            {
+                e.Graphics.FillRectangle(brush, rect);
+            }
         }
 
         private void pnlProject_Click(object sender, EventArgs e)
@@ -155,6 +165,7 @@ namespace CAS_Engineering_Main.Dash
                 btnUpdateUsr.Visible = false;
                 pnlPay.Visible = false;
                 pnlReports.Visible = false;
+                
             }
         }
 
@@ -162,7 +173,6 @@ namespace CAS_Engineering_Main.Dash
         {
             this.Close();
             Form1 form1 = new Form1();
-            form1.Show();
         }
 
         private void btnAddUsr_Click(object sender, EventArgs e)
@@ -238,6 +248,63 @@ namespace CAS_Engineering_Main.Dash
         }
 
         private void pnlReports_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void pnlAdminV_Paint(object sender, PaintEventArgs e)
+        {
+            Color startColor = Color.FromArgb(0, 122, 204); 
+            Color endColor = Color.FromArgb(23, 162, 184); 
+            LinearGradientMode gradientMode = LinearGradientMode.Vertical;
+
+            Rectangle rect = new Rectangle(0, 0, pnlAdminV.Width, pnlAdminV.Height);
+
+            using (LinearGradientBrush brush = new LinearGradientBrush(rect, startColor, endColor, gradientMode))
+            {
+                e.Graphics.FillRectangle(brush, rect);
+            }
+        }
+
+        private void pnlProjectV_Paint(object sender, PaintEventArgs e)
+        {
+            Color startColor = Color.FromArgb(0, 122, 204);
+            Color endColor = Color.FromArgb(23, 162, 184);
+            LinearGradientMode gradientMode = LinearGradientMode.Vertical;
+
+            Rectangle rect = new Rectangle(0, 0, pnlProjectV.Width, pnlProjectV.Height);
+
+            using (LinearGradientBrush brush = new LinearGradientBrush(rect, startColor, endColor, gradientMode))
+            {
+                e.Graphics.FillRectangle(brush, rect);
+            }
+        }
+
+        private void pnlEquipV_Paint(object sender, PaintEventArgs e)
+        {
+            Color startColor = Color.FromArgb(0, 122, 204);
+            Color endColor = Color.FromArgb(23, 162, 184);
+            LinearGradientMode gradientMode = LinearGradientMode.Vertical;
+
+            Rectangle rect = new Rectangle(0, 0, pnlEquipV.Width, pnlEquipV.Height);
+
+            using (LinearGradientBrush brush = new LinearGradientBrush(rect, startColor, endColor, gradientMode))
+            {
+                e.Graphics.FillRectangle(brush, rect);
+            }
+        }
+
+        private void btnAddUsr_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void btnRemoveUsr_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void btnUpdateUsr_Paint(object sender, PaintEventArgs e)
         {
             
         }
