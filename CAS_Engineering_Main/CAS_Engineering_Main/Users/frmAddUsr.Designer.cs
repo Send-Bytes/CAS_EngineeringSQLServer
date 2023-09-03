@@ -45,7 +45,7 @@
             this.txtECN = new System.Windows.Forms.TextBox();
             this.txtECName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboRank = new System.Windows.Forms.ComboBox();
             this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnAddUsr = new System.Windows.Forms.Button();
@@ -201,15 +201,15 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Rank:";
             // 
-            // comboBox1
+            // cboRank
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(634, 211);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(154, 24);
-            this.comboBox1.TabIndex = 18;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cboRank.FormattingEnabled = true;
+            this.cboRank.Location = new System.Drawing.Point(634, 211);
+            this.cboRank.Margin = new System.Windows.Forms.Padding(4);
+            this.cboRank.Name = "cboRank";
+            this.cboRank.Size = new System.Drawing.Size(154, 24);
+            this.cboRank.TabIndex = 18;
+            this.cboRank.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblPass
             // 
@@ -285,7 +285,7 @@
             this.Controls.Add(this.btnAddUsr);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.lblPass);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboRank);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtECName);
             this.Controls.Add(this.txtECN);
@@ -331,7 +331,7 @@
         private System.Windows.Forms.TextBox txtECN;
         private System.Windows.Forms.TextBox txtECName;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboRank;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnAddUsr;

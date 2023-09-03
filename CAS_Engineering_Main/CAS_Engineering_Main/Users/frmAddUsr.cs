@@ -5,6 +5,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -72,12 +74,12 @@ namespace CAS_Engineering_Main.Users
                 dataAdapter = new SqlDataAdapter(popComboB, con);
                 DataSet ds = new DataSet();
                 dataAdapter.Fill(ds,"rank");
-                comboBox1.DisplayMember = "Rank";
-                comboBox1.ValueMember = "Rank";
-                comboBox1.DataSource = ds.Tables["rank"];
+                cboRank.DisplayMember = "Rank";
+                cboRank.ValueMember = "Rank";
+                cboRank.DataSource = ds.Tables["rank"];
 
                 con.Close();
-                comboBox1.SelectedIndex = -1;
+                cboRank.SelectedIndex = -1;
 
             }
             catch(SqlException sqlEx) { MessageBox.Show("The following unexcepted error has occured: " + sqlEx.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -89,7 +91,7 @@ namespace CAS_Engineering_Main.Users
         {
             /**To determine which rank has been selected and based on the selected rank the textbox to insert a password will be 
              * displayed */
-            if (comboBox1.SelectedIndex.ToString() == "Administrator" || comboBox1.SelectedIndex.ToString() == "Project Manager")
+            if (cboRank.SelectedIndex.ToString() == "Administrator" || cboRank.SelectedIndex.ToString() == "Project Manager")
             {
                 lblPass.Visible = true; txtPass.Visible = true;
                 
@@ -110,13 +112,13 @@ namespace CAS_Engineering_Main.Users
                 //Opening connection to the database
                 if(con.State==ConnectionState.Closed) { con.Open(); }
 
-                if(comboBox1.SelectedIndex != -1 && comboBox1.SelectedIndex.ToString() == "Administrator" || comboBox1.SelectedIndex.ToString() == "Project Manager")
+                if(cboRank.SelectedIndex != -1 && cboRank.SelectedIndex.ToString() == "Administrator" || cboRank.SelectedIndex.ToString() == "Project Manager")
                 {
                     if(txtPass.Text != "")
                     {
                         string sql_insert = $"INSERT INTO Users (Rank,Password,FirstName,LastName,ID_Number,Contact_Number,Email_Address,Date_Of_Birth,Emergency_Contact,Next_Of_Kin) VALUES(@rank,@pass,@name,@lName,@id,@cn,@eAdd,@dob,@EC,@nof)";
                         command = new SqlCommand(sql_insert, con);
-                        command.Parameters.AddWithValue("@rank", comboBox1.SelectedIndex.ToString());
+                        command.Parameters.AddWithValue("@rank", cboRank.SelectedIndex.ToString());
                         command.Parameters.AddWithValue("@pass", txtPass.Text);
                         command.Parameters.AddWithValue("@name", txtName.Text);
                         command.Parameters.AddWithValue("@lName", txtLName.Text);
@@ -139,7 +141,7 @@ namespace CAS_Engineering_Main.Users
                     {
                         string sql_insert = $"INSERT INTO Users (Rank,FirstName,LastName,ID_Number,Contact_Number,Email_Address,Date_Of_Birth,Emergency_Contact,Next_Of_Kin) VALUES(@rank,@name,@lName,@id,@cn,@eAdd,@dob,@EC,@nof)";
                         command = new SqlCommand(sql_insert, con);
-                        command.Parameters.AddWithValue("@rank", comboBox1.SelectedIndex.ToString());
+                        command.Parameters.AddWithValue("@rank", cboRank.SelectedIndex.ToString());
                        
                         command.Parameters.AddWithValue("@name", txtName.Text);
                         command.Parameters.AddWithValue("@lName", txtLName.Text);
@@ -157,11 +159,40 @@ namespace CAS_Engineering_Main.Users
 
                 }
                 con.Close();
-                MessageBox.Show("New user added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("New user added successfully! \nAn confirmation email will be sent.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Email Confirmation //!!Its not yet enabled. I will enable later!!//
+                try
+                {
+                    SmtpClient client = new SmtpClient();
+                    client.Port = 587;
+                    client.Host = "";
+                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new NetworkCredential("", "");
+
+                    MailMessage mail = new MailMessage();
+                    mail.From = new MailAddress("");
+                    mail.To.Add(txtEmail.Text);
+                    mail.Subject = "CAS Account Success";
+                    mail.Body = "Good day, " + txtName.Text;
+                    mail.Body = "\n\nYour CAS account has been created and is ready to be used.";
+                    mail.Body = "\n\nYour login details:";
+                    mail.Body = "\nUsername: " + txtName.Text;
+                    mail.Body = "\nPassword: " + txtPass.Text;
+                    mail.Body = "\nRank:     " + cboRank.Text;
+                    mail.Body = "\n\nKind reagrds, \nCAS Team";
+
+                    client.Send(mail);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Email verification failed!");
+                }
 
                 //Clearing all textboxes and comobox selection
                 ClearTextboxes();
-                comboBox1.SelectedIndex = -1;
+                cboRank.SelectedIndex = -1;
                 txtName.Focus();
 
             }
