@@ -43,10 +43,9 @@
             // 
             this.btnUpEquip.BackColor = System.Drawing.Color.Goldenrod;
             this.btnUpEquip.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpEquip.Location = new System.Drawing.Point(679, 397);
-            this.btnUpEquip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpEquip.Location = new System.Drawing.Point(509, 323);
             this.btnUpEquip.Name = "btnUpEquip";
-            this.btnUpEquip.Size = new System.Drawing.Size(209, 58);
+            this.btnUpEquip.Size = new System.Drawing.Size(157, 47);
             this.btnUpEquip.TabIndex = 0;
             this.btnUpEquip.Text = "Update Equipment";
             this.btnUpEquip.UseVisualStyleBackColor = false;
@@ -54,52 +53,49 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 15);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1040, 302);
+            this.dataGridView1.Size = new System.Drawing.Size(780, 245);
             this.dataGridView1.TabIndex = 1;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(300, 418);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Location = new System.Drawing.Point(232, 339);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(160, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(189, 420);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(142, 341);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Update Quantity";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-94, -42);
+            this.pictureBox1.Location = new System.Drawing.Point(-70, -34);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1247, 604);
+            this.pictureBox1.Size = new System.Drawing.Size(935, 491);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // frmUpEquip
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnUpEquip);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmUpEquip";
             this.Text = "frmUpEquip";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

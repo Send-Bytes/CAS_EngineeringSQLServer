@@ -99,3 +99,28 @@ C:\Users\Reynardt Anderson\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Enginee
 C:\Users\Reynardt Anderson\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmUpUsr.resources
 C:\Users\Reynardt Anderson\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.frmProjects.resources
 C:\Users\Reynardt Anderson\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Users.frmAddUsr.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.AssemblyReference.cache
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.SuggestedBindingRedirects.cache
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmAddEquip.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmClientAdd.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmDashPM.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmDelEquip.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmDelProj.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmDelUsr.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmPayment.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmProjUpdate.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmUpEquip.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmUpUsr.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Form1.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.frmProjects.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Users.frmAddUsr.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.GenerateResource.cache
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.exe
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.pdb
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\dboCASEngineering.mdf
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\dboCASEngineering_log.ldf
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\CAS_Engineering_Main.exe.config
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\CAS_Engineering_Main.exe
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\bin\Debug\CAS_Engineering_Main.pdb
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Properties.Resources.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.CoreCompileInputs.cache
