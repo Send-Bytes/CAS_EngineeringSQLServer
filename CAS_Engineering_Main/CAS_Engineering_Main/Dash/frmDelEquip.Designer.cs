@@ -122,6 +122,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(135, 20);
             this.txtID.TabIndex = 15;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // txtDescription
             // 
@@ -129,6 +130,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(135, 20);
             this.txtDescription.TabIndex = 16;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
             // txtManufacturer
             // 
@@ -136,6 +138,7 @@
             this.txtManufacturer.Name = "txtManufacturer";
             this.txtManufacturer.Size = new System.Drawing.Size(135, 20);
             this.txtManufacturer.TabIndex = 17;
+            this.txtManufacturer.TextChanged += new System.EventHandler(this.txtManufacturer_TextChanged);
             // 
             // frmDelEquip
             // 

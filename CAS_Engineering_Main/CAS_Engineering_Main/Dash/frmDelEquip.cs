@@ -19,80 +19,80 @@ namespace CAS_Engineering_Main.Dash
             InitializeComponent();
         }
 
-        private void PopulateListBox()
+        
+        private void frmDelEquip_Load_1(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            // Initialize your database connection (SqlConnection)
+            using (SqlConnection connection = new SqlConnection("YourConnectionStringHere"))
             {
-                try
-                {
-                    connection.Open();
-                    string query = "SELECT E_ID, E_Description FROM Equipment";
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    SqlDataReader reader = cmd.ExecuteReader();
+                connection.Open();
 
-                    while (reader.Read())
-                    {
-                        string equipmentDescription = reader["E_Description"].ToString();
-                        listBoxEquipment.Items.Add(equipmentDescription);
-                    }
+                // Create a SQL command to select data from the Equipment table
+                SqlCommand cmd = new SqlCommand("SELECT E_ID, E_Description, E_Manufacturer FROM Equipment", connection);
 
-                    reader.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                // Create a DataTable to hold the data
+                DataTable dt = new DataTable();
+
+                // Use a SqlDataAdapter to fill the DataTable
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+
+                // Bind the DataGridView to the DataTable
+                dataGridView1.DataSource = dt;
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDeleteEquip_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedItem != null)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                string equipmentDescriptionToDelete = listBoxEquipment.SelectedItem.ToString();
+                // Get the selected row's E_ID
+                string selectedEID = dataGridView1.SelectedRows[0].Cells["E_ID"].Value.ToString();
 
-                // confirmation 
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this equipment?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (result == DialogResult.Yes)
+                // Execute a DELETE SQL command to remove the selected item from the database
+                using (SqlConnection connection = new SqlConnection("YourConnectionStringHere"))
                 {
-                    // Perform the deletion 
-                    try
-                    {
-                        using (SqlConnection connection = new SqlConnection(connectionString))
-                        {
-                            connection.Open();
-                            string deleteQuery = "DELETE FROM Equipment WHERE E_Description = @EquipmentDescription";
-                            SqlCommand cmd = new SqlCommand(deleteQuery, connection);
-                            cmd.Parameters.AddWithValue("@EquipmentDescription", equipmentDescriptionToDelete);
-                            cmd.ExecuteNonQuery();
-                            MessageBox.Show("Equipment deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    connection.Open();
 
-                            // Remove the selected item from the ListBox.
-                            listBoxEquipment.Items.Remove(equipmentDescriptionToDelete);
-                        }
-                    }
-                    catch (Exception ex)
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Equipment WHERE E_ID = @EID", connection);
+                    cmd.Parameters.AddWithValue("@EID", selectedEID);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // Refresh the DataGridView to reflect the changes
+                        frmDelEquip_Load_1(sender, e);
+                        MessageBox.Show("Item deleted successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to delete item.");
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Please select an equipment to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select an item to delete.");
             }
         }
 
-        private void frmDelEquip_Load_1(object sender, EventArgs e)
+        private void txtID_TextChanged(object sender, EventArgs e)
         {
-            PopulateListBox();
+            DataView dv = ((DataTable)dataGridView1.DataSource).DefaultView;
+            dv.RowFilter = $"E_ID LIKE '{txtID.Text}%'";
         }
 
-        private void btnDeleteEquip_Click(object sender, EventArgs e)
+        private void txtDescription_TextChanged(object sender, EventArgs e)
         {
-
+            DataView dv = ((DataTable)dataGridView1.DataSource).DefaultView;
+            dv.RowFilter = $"E_Description LIKE '%{txtDescription.Text}%'";
         }
 
+        private void txtManufacturer_TextChanged(object sender, EventArgs e)
+        {
+            DataView dv = ((DataTable)dataGridView1.DataSource).DefaultView;
+            dv.RowFilter = $"E_Manufacturer LIKE '%{txtManufacturer.Text}%'";
+        }
     }
 }
