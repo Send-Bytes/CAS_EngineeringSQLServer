@@ -125,5 +125,4 @@ C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\
 C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Properties.Resources.resources
 C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.CoreCompileInputs.cache
 C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmProjEquip.resources
-C:\Users\Marcl\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmAllocateEmps.resources
-C:\Users\Marcl\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmProjEquip.resources
+C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmAllocateEmps.resources
