@@ -119,7 +119,7 @@ namespace CAS_Engineering_Main.Dash
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 // Get the value of the "ID" column from the clicked cell
-                int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
+                int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["User_ID"].Value);
 
                 // Display the selected ID in the TextBox
                 txtUID.Text = id.ToString();

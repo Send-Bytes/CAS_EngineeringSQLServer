@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 351);
+            this.ClientSize = new System.Drawing.Size(435, 351);
             this.Controls.Add(this.btnAddEquip);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.txtPrice);
