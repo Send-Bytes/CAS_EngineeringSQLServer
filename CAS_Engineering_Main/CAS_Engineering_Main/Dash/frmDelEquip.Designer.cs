@@ -52,6 +52,7 @@
             this.btnDeleteEquip.TabIndex = 9;
             this.btnDeleteEquip.Text = "Delete Equipment";
             this.btnDeleteEquip.UseVisualStyleBackColor = false;
+            this.btnDeleteEquip.Click += new System.EventHandler(this.btnDeleteEquip_Click);
             // 
             // label1
             // 

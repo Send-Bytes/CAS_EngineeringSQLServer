@@ -47,7 +47,7 @@ namespace CAS_Engineering_Main.Dash
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (listBoxEquipment.SelectedItem != null)
+            if (dataGridView1.SelectedItem != null)
             {
                 string equipmentDescriptionToDelete = listBoxEquipment.SelectedItem.ToString();
 
@@ -87,6 +87,11 @@ namespace CAS_Engineering_Main.Dash
         private void frmDelEquip_Load_1(object sender, EventArgs e)
         {
             PopulateListBox();
+        }
+
+        private void btnDeleteEquip_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
