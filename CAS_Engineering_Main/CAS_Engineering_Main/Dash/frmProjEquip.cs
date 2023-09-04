@@ -21,50 +21,6 @@ namespace CAS_Engineering_Main.Dash
             frm1 = new Form1();
         }
 
-        private void frmProjEquip_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                string conStr = frm1.conString;
-
-                using (SqlConnection con = new SqlConnection(conStr))
-                {
-                    string sql = "SELECT P_Description FROM Projects";
-
-                    con.Open();
-
-                    SqlCommand cmd = new SqlCommand(sql, con);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        cmbProjId.Items.Clear();
-                        cmbProjId.Items.Add(reader.GetValue(0));
-                    }
-
-                    reader.Close();
-
-                    sql = "SELECT E_Description FROM Equipment";
-                    cmd = new SqlCommand(sql, con);
-
-                    reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        cmbEquip.Items.Clear();
-                        cmbEquip.Items.Add(reader.GetValue(0));
-                    }
-
-                    con.Close();
-                }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("An error occured: " + ex.Message);
-            }
-        }
-
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             try
@@ -126,6 +82,49 @@ namespace CAS_Engineering_Main.Dash
 
 
 
+        }
+
+        private void frmProjEquip_Load_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string conStr = frm1.conString;
+
+                using (SqlConnection con = new SqlConnection(conStr))
+                {
+                    string sql = "SELECT P_Description FROM Projects";
+
+                    con.Open();
+
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        cmbProjId.Items.Clear();
+                        cmbProjId.Items.Add(reader.GetValue(0));
+                    }
+
+                    reader.Close();
+
+                    sql = "SELECT E_Description FROM Equipment";
+                    cmd = new SqlCommand(sql, con);
+
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        cmbEquip.Items.Clear();
+                        cmbEquip.Items.Add(reader.GetValue(0));
+                    }
+
+                    con.Close();
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("An error occured: " + ex.Message);
+            }
         }
     }
 }

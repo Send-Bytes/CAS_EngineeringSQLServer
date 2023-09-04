@@ -123,6 +123,7 @@
             this.DoubleBuffered = true;
             this.Name = "frmProjEquip";
             this.Text = "frmProjEquip";
+            this.Load += new System.EventHandler(this.frmProjEquip_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
