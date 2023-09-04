@@ -157,9 +157,10 @@
             // 
             // btnUpdateUsr
             // 
-            this.btnUpdateUsr.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnUpdateUsr.BackColor = System.Drawing.Color.Goldenrod;
             this.btnUpdateUsr.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpdateUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateUsr.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateUsr.Location = new System.Drawing.Point(745, 33);
             this.btnUpdateUsr.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateUsr.Name = "btnUpdateUsr";
@@ -172,9 +173,10 @@
             // 
             // btnRemoveUsr
             // 
-            this.btnRemoveUsr.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnRemoveUsr.BackColor = System.Drawing.Color.Goldenrod;
             this.btnRemoveUsr.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRemoveUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveUsr.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveUsr.Location = new System.Drawing.Point(397, 33);
             this.btnRemoveUsr.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveUsr.Name = "btnRemoveUsr";
@@ -187,15 +189,16 @@
             // 
             // btnAddUsr
             // 
-            this.btnAddUsr.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAddUsr.BackColor = System.Drawing.Color.Goldenrod;
             this.btnAddUsr.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddUsr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUsr.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUsr.Location = new System.Drawing.Point(38, 33);
             this.btnAddUsr.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddUsr.Name = "btnAddUsr";
             this.btnAddUsr.Size = new System.Drawing.Size(196, 59);
             this.btnAddUsr.TabIndex = 19;
-            this.btnAddUsr.Text = "Add User";
+            this.btnAddUsr.Text = " Add User";
             this.btnAddUsr.UseVisualStyleBackColor = false;
             this.btnAddUsr.Click += new System.EventHandler(this.btnAddUsr_Click);
             this.btnAddUsr.Paint += new System.Windows.Forms.PaintEventHandler(this.btnAddUsr_Paint);
@@ -232,9 +235,10 @@
             // 
             // btnAddEmpP
             // 
-            this.btnAddEmpP.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAddEmpP.BackColor = System.Drawing.Color.Goldenrod;
             this.btnAddEmpP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddEmpP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmpP.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEmpP.Location = new System.Drawing.Point(745, 37);
             this.btnAddEmpP.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddEmpP.Name = "btnAddEmpP";
@@ -246,9 +250,10 @@
             // 
             // btnDeleteP
             // 
-            this.btnDeleteP.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnDeleteP.BackColor = System.Drawing.Color.Goldenrod;
             this.btnDeleteP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDeleteP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteP.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteP.Location = new System.Drawing.Point(523, 37);
             this.btnDeleteP.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteP.Name = "btnDeleteP";
@@ -260,9 +265,10 @@
             // 
             // btnUpdateP
             // 
-            this.btnUpdateP.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnUpdateP.BackColor = System.Drawing.Color.Goldenrod;
             this.btnUpdateP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpdateP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateP.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateP.Location = new System.Drawing.Point(284, 37);
             this.btnUpdateP.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateP.Name = "btnUpdateP";
@@ -330,9 +336,10 @@
             // 
             // btnDeleteE
             // 
-            this.btnDeleteE.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnDeleteE.BackColor = System.Drawing.Color.Goldenrod;
             this.btnDeleteE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDeleteE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteE.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteE.Location = new System.Drawing.Point(745, 42);
             this.btnDeleteE.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteE.Name = "btnDeleteE";
@@ -344,9 +351,10 @@
             // 
             // btnAllocateE
             // 
-            this.btnAllocateE.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAllocateE.BackColor = System.Drawing.Color.Goldenrod;
             this.btnAllocateE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAllocateE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllocateE.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllocateE.Location = new System.Drawing.Point(523, 42);
             this.btnAllocateE.Margin = new System.Windows.Forms.Padding(4);
             this.btnAllocateE.Name = "btnAllocateE";
@@ -358,9 +366,10 @@
             // 
             // btnUpdateE
             // 
-            this.btnUpdateE.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnUpdateE.BackColor = System.Drawing.Color.Goldenrod;
             this.btnUpdateE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpdateE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateE.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateE.Location = new System.Drawing.Point(284, 42);
             this.btnUpdateE.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateE.Name = "btnUpdateE";
@@ -372,9 +381,10 @@
             // 
             // btnAddE
             // 
-            this.btnAddE.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAddE.BackColor = System.Drawing.Color.Goldenrod;
             this.btnAddE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddE.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddE.Location = new System.Drawing.Point(38, 42);
             this.btnAddE.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddE.Name = "btnAddE";
@@ -424,9 +434,10 @@
             // 
             // btnPayment
             // 
-            this.btnPayment.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnPayment.BackColor = System.Drawing.Color.Goldenrod;
             this.btnPayment.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayment.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayment.Location = new System.Drawing.Point(408, 32);
             this.btnPayment.Margin = new System.Windows.Forms.Padding(4);
             this.btnPayment.Name = "btnPayment";
