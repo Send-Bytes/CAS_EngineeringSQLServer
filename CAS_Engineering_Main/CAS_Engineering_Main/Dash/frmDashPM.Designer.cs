@@ -80,7 +80,7 @@
             this.label1.Location = new System.Drawing.Point(415, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 41);
+            this.label1.Size = new System.Drawing.Size(162, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Panel";
             // 
@@ -91,7 +91,7 @@
             this.label2.Location = new System.Drawing.Point(378, 41);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(245, 41);
+            this.label2.Size = new System.Drawing.Size(238, 40);
             this.label2.TabIndex = 1;
             this.label2.Text = "Administrator Panel";
             // 
@@ -102,7 +102,7 @@
             this.label13.Location = new System.Drawing.Point(407, 44);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(200, 41);
+            this.label13.Size = new System.Drawing.Size(195, 40);
             this.label13.TabIndex = 12;
             this.label13.Text = "Request Reports";
             // 
@@ -118,11 +118,12 @@
             this.flowLayoutPanel1.Controls.Add(this.pnlPay);
             this.flowLayoutPanel1.Controls.Add(this.pnlPayV);
             this.flowLayoutPanel1.Controls.Add(this.pnlReports);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(334, 98);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(186, 94);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1009, 388);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1006, 389);
             this.flowLayoutPanel1.TabIndex = 17;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // pnlAdmin
             // 
@@ -136,6 +137,7 @@
             this.pnlAdmin.Size = new System.Drawing.Size(976, 123);
             this.pnlAdmin.TabIndex = 18;
             this.pnlAdmin.Click += new System.EventHandler(this.panel1_Click);
+            this.pnlAdmin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAdmin_Paint);
             this.pnlAdmin.MouseLeave += new System.EventHandler(this.pnlAdmin_MouseLeave);
             this.pnlAdmin.MouseHover += new System.EventHandler(this.pnlAdmin_MouseHover);
             // 
@@ -272,9 +274,10 @@
             // 
             // btnAddP
             // 
-            this.btnAddP.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAddP.BackColor = System.Drawing.Color.Goldenrod;
             this.btnAddP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddP.Font = new System.Drawing.Font("Goudy Old Style", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddP.Location = new System.Drawing.Point(38, 37);
             this.btnAddP.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddP.Name = "btnAddP";
@@ -306,7 +309,7 @@
             this.label18.Location = new System.Drawing.Point(397, 42);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(207, 41);
+            this.label18.Size = new System.Drawing.Size(200, 40);
             this.label18.TabIndex = 18;
             this.label18.Text = "Equipment Panel";
             // 
@@ -403,7 +406,7 @@
             this.label19.Location = new System.Drawing.Point(407, 40);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(186, 41);
+            this.label19.Size = new System.Drawing.Size(180, 40);
             this.label19.TabIndex = 18;
             this.label19.Text = "Payment Panel";
             // 
@@ -461,10 +464,12 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnClose.BackColor = System.Drawing.Color.Goldenrod;
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(334, 514);
+            this.btnClose.Font = new System.Drawing.Font("Goudy Old Style", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClose.Location = new System.Drawing.Point(604, 495);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(160, 66);
             this.btnClose.TabIndex = 19;
@@ -476,22 +481,24 @@
             // 
             this.lblGreet.AutoSize = true;
             this.lblGreet.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGreet.Location = new System.Drawing.Point(54, 254);
+            this.lblGreet.Location = new System.Drawing.Point(545, 26);
             this.lblGreet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGreet.Name = "lblGreet";
-            this.lblGreet.Size = new System.Drawing.Size(188, 41);
+            this.lblGreet.Size = new System.Drawing.Size(314, 40);
             this.lblGreet.TabIndex = 2;
-            this.lblGreet.Text = "CAS Dashboard";
+            this.lblGreet.Text = "Welcome to CAS Dashboard";
+            this.lblGreet.Click += new System.EventHandler(this.lblGreet_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-854, -87);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(2253, 737);
+            this.pictureBox1.Size = new System.Drawing.Size(1410, 623);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmDashPM
             // 
