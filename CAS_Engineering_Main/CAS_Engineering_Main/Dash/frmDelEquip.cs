@@ -18,7 +18,7 @@ namespace CAS_Engineering_Main.Dash
         {
             InitializeComponent();
         }
-
+        /*
         private void PopulateListBox()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -44,7 +44,7 @@ namespace CAS_Engineering_Main.Dash
                 }
             }
         }
-
+        /*
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedItem != null)
@@ -83,10 +83,10 @@ namespace CAS_Engineering_Main.Dash
                 MessageBox.Show("Please select an equipment to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        */
         private void frmDelEquip_Load_1(object sender, EventArgs e)
         {
-            PopulateListBox();
+            //PopulateListBox();
         }
 
         private void btnDeleteEquip_Click(object sender, EventArgs e)
