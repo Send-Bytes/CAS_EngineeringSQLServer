@@ -125,8 +125,5 @@ C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\
 C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Properties.Resources.resources
 C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.csproj.CoreCompileInputs.cache
 C:\Users\KENNARD\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmProjEquip.resources
-C:\Users\Reynardt\Desktop\CAS_Engineering\CAS_Engineering\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmAllocateEmps.resources
-C:\Users\Reynardt\Desktop\CAS_Engineering\CAS_Engineering\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmDelEquip.resources
-C:\Users\Reynardt\Desktop\CAS_Engineering\CAS_Engineering\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmDelUsr.resources
-C:\Users\Reynardt\Desktop\CAS_Engineering\CAS_Engineering\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmProjEquip.resources
-C:\Users\Reynardt\Desktop\CAS_Engineering\CAS_Engineering\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmUpUsr.resources
+C:\Users\Marcl\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmAllocateEmps.resources
+C:\Users\Marcl\Documents\GitHub\CAS_EngineeringSQLServer\CAS_Engineering_Main\CAS_Engineering_Main\obj\Debug\CAS_Engineering_Main.Dash.frmProjEquip.resources
