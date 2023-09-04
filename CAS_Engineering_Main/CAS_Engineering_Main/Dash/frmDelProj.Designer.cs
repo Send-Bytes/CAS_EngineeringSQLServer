@@ -121,8 +121,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(489, 294);
+            this.label6.Location = new System.Drawing.Point(439, 294);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 16);
             this.label6.TabIndex = 10;
@@ -130,7 +131,7 @@
             // 
             // txtPID
             // 
-            this.txtPID.Location = new System.Drawing.Point(578, 290);
+            this.txtPID.Location = new System.Drawing.Point(517, 290);
             this.txtPID.Name = "txtPID";
             this.txtPID.Size = new System.Drawing.Size(143, 20);
             this.txtPID.TabIndex = 11;
@@ -140,7 +141,7 @@
             this.btnDelProj.BackColor = System.Drawing.Color.Goldenrod;
             this.btnDelProj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelProj.ForeColor = System.Drawing.Color.Black;
-            this.btnDelProj.Location = new System.Drawing.Point(492, 385);
+            this.btnDelProj.Location = new System.Drawing.Point(498, 334);
             this.btnDelProj.Name = "btnDelProj";
             this.btnDelProj.Size = new System.Drawing.Size(127, 47);
             this.btnDelProj.TabIndex = 12;
@@ -161,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 535);
+            this.ClientSize = new System.Drawing.Size(800, 451);
             this.Controls.Add(this.cboS);
             this.Controls.Add(this.btnDelProj);
             this.Controls.Add(this.txtPID);
